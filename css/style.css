@@ -21,7 +21,7 @@ header {
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 50px 10%; /* Gunakan persentase untuk responsivitas */
+    padding: 50px 200px; /* Gunakan persentase untuk responsivitas */
     flex-wrap: wrap; /* Izinkan elemen berbaris ke bawah jika ruang tidak cukup */
 }
 
