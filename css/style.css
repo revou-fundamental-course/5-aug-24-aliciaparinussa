@@ -161,7 +161,7 @@ button#reset-button:hover {
 .result-box {
     background-color: #ffffff;
     width: 100%; /* Menggunakan lebar penuh untuk responsivitas */
-    max-width: 700px; /* Maksimal lebar 700px */
+    max-width: 500px; /* Maksimal lebar 700px */
     border-radius: 20px;
     padding: 20px;
     text-align: center;
