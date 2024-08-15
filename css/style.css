@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #54B9C5;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.main-title {
+    margin: 0;
+    font-size: 2em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%; /* Gunakan persentase untuk responsivitas */
+    flex-wrap: wrap; /* Izinkan elemen berbaris ke bawah jika ruang tidak cukup */
+}
+
+.left-column, .right-column {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+    max-width: 100%; /* Pastikan kolom tidak melampaui lebar kontainer */
+}
+
+.info p, .calculator label, .result p {
+    margin: 0 0 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 35px;
+}
+
+.radio-label input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.custom-radio {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    transition: background-color 0.3s, border-color 0.3s;
+    transform: translateY(-50%);
+}
+
+.radio-label input[type="radio"]:checked + .custom-radio {
+    background-color: #54B9C5;
+    border-color: #54B9C5;
+}
+
+.custom-radio::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="number"] {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #54B9C5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #4a9bbd;
+}
+
+button#reset-button {
+    background-color: #f44336;
+}
+
+button#reset-button:hover {
+    background-color: #c62828;
+}
+
+.hidden {
+    display: none;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result-box {
+    background-color: #ffffff;
+    width: 100%; /* Menggunakan lebar penuh untuk responsivitas */
+    max-width: 700px; /* Maksimal lebar 700px */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #54B9C5;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#download-button {
+    background-color: #54B9C5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#download-button:hover {
+    background-color: #3a8e9f;
+}
+
+.bmi-value {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.bmi-category {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.bmi-description {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0 0;
+}
+
+.disease-info {
+    background-color: #ffffff;
+    width: 100%; /* Menggunakan lebar penuh untuk responsivitas */
+    max-width: 700px; /* Maksimal lebar 700px */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.disease-info h3 {
+    color: #54B9C5;
+}
+
+.disease-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.disease-info li {
+    margin-bottom: 10px;
+}
+
+.health-warning {
+    background-color: #fff4e6;
+    width: 100%; /* Menggunakan lebar penuh untuk responsivitas */
+    max-width: 700px; /* Maksimal lebar 700px */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ff9800;
+}
+
+.health-warning p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .result-box, .disease-info, .health-warning {
+        width: 90%; /* Lebar 90% dari layar */
+        padding: 5px; /* Kurangi padding untuk layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .result-box, .disease-info, .health-warning {
+        width: 90%; /* Lebar penuh pada layar kecil */
+        padding: 5px; /* Kurangi padding lebih lanjut untuk layar sangat kecil */
+    }
+
+    .disease-info h3 {
+        font-size: 1.2em; /* Sesuaikan ukuran font judul */
+    }
+
+    .disease-info ul {
+        padding-left: 15px; /* Sesuaikan padding untuk list */
+    }
+}
