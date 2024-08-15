@@ -259,7 +259,7 @@ footer{
 
 @media (max-width: 480px) {
     .result-box, .disease-info, .health-warning {
-        width: 90%; /* Lebar penuh pada layar kecil */
+        width: 80%; /* Lebar penuh pada layar kecil */
         padding: 5px; /* Kurangi padding lebih lanjut untuk layar sangat kecil */
     }
 
