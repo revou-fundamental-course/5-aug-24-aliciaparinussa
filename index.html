@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="main-title">Kalkulator Body Mass Index (BMI)</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Kolom Kiri -->
+            <section class="left-column">
+                <!-- Informasi Kalkulator -->
+                <section class="info">
+                    <article>
+                        <p>
+                            Body Mass Index (BMI) adalah ukuran yang digunakan untuk mengetahui apakah berat badan Anda tergolong normal, kurang, atau berlebih berdasarkan perbandingan antara berat badan dan tinggi badan Anda.
+                        </p>
+                        <p>
+                            Dengan menggunakan kalkulator BMI ini, Anda dapat mengetahui kategori berat badan Anda dan melihat apakah Anda perlu melakukan perubahan pada gaya hidup Anda untuk mencapai berat badan yang lebih sehat.
+                        </p>
+                        <p>
+                            Yuk, hitung sekarang di kalkulator BMI.
+                        </p>
+                    </article>
+                </section>
+                
+                <!-- Kalkulator BMI -->
+                <section class="calculator">
+                    <h2>Masukkan Data Anda</h2>
+                    <form id="bmi-form">
+                        <fieldset>
+                            <legend>Jenis Kelamin:</legend>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="male" required>
+                                    <span class="custom-radio"></span>
+                                    Laki-laki
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="female" required>
+                                    <span class="custom-radio"></span>
+                                    Perempuan
+                                </label>
+                            </div>
+                        </fieldset>
+                        
+                        <label for="age">Usia:</label>
+                        <input type="number" id="age" name="age" required>
+
+                        <label for="weight">Berat Badan (kg):</label>
+                        <input type="number" id="weight" name="weight" required>
+                        
+                        <label for="height">Tinggi Badan (cm):</label>
+                        <input type="number" id="height" name="height" required>
+                        
+                        <div class="form-buttons">
+                            <button type="submit">Hitung BMI</button>
+                            <button type="reset" id="reset-button">Reset</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+            
+            <!-- Kolom Kanan -->
+            <section class="right-column">
+                <section class="result">
+                    <h2>Hasil BMI</h2>
+                    <div class="result-box">
+                        <p id="bmi-result">Silakan masukkan data dan klik tombol "Hitung BMI" untuk melihat hasilnya.</p>
+                        <button id="download-button" style="display: none;">Download Hasil BMI</button>
+                    </div>
+                    <div class="health-warning" style="display: none;">
+                        <p>Body Mass Index (BMI) tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+                    </div>            
+                    <!-- Kotak untuk penyakit atau keterangan -->
+                    <div class="disease-info" style="display: none;">
+                        <h3>Penyakit atau Keterangan Terkait</h3>
+                        <ul id="disease-list">
+                            <!-- Daftar penyakit atau keterangan akan diisi pada JavaScript -->
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
