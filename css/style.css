@@ -245,8 +245,8 @@ button#reset-button:hover {
 
 footer{
     background-color: #54B9C5;
-    height: 50px;
     color: white;
+    padding-bottom: 0%;
     text-align: center;
 }
 
