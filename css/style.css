@@ -243,6 +243,13 @@ button#reset-button:hover {
     margin: 0;
 }
 
+footer{
+    background-color: #54B9C5;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .result-box, .disease-info, .health-warning {
         width: 90%; /* Lebar 90% dari layar */
